@@ -100,7 +100,7 @@ class FaceDetectorLightDlib(FaceDetector):
         Returns:
             True if the model was loaded successfully and False elsewise
         '''
-        path =os.path.join(os.path.dirname(os.path.realpath(__file__)),'dlib')
+        path =os.path.join(os.path.dirname(os.path.realpath(__file__)),'model')
         path = os.path.join(path,'shape_predictor_5_face_landmarks.dat')
         print(path)
         self.predictor = dlib.shape_predictor(path)

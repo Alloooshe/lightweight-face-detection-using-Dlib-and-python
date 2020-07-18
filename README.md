@@ -19,7 +19,10 @@ example :
 
     bounding_boxes, facial_points = detection_system.detect(image)
 
+4- clean your models for saving space (it's very tiny but still matter for some applications!)
 
+    detection_system.clean()
+    
 ## dependencies 
 openCV
 dlib
